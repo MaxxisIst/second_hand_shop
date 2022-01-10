@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.min.css">
+  <title>Second Hand Shop</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+       <img src="images/logo/logo.svg" alt="Логотип компании Second Hand(зеленое дерево)" class="header__logo-img" width="112" height="42">
+      </a>
+
+      <nav class="navigation header__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="?category=women" class="navigation__link">
+               Женщинам
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="?category=men" class="navigation__link">
+              Мужчинам
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="?category=kids" class="navigation__link">
+              Детям
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__search">
+        <form action="#" class="search">
+          <input type="search" class="search__input">
+          <button class="search__button" type="button"></button>
+          <button class="search__close" type="button"></button>
+        </form>
+      </div>
+
+      <ul class="header__control-list">
+        <li header__control-item>
+          <button class="header__btn header__btn_cart"></button>
+        </li>
+        <li header__control-item>
+          <a href="?" class="header__btn header__btn_favorite"></a>
+        </li>
+        <li header__control-item>
+          <a href="#" class="header__btn header__btn_person"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__slider">
+          <ul class="hero__slider-list">
+            <li class="hero__slider-item">
+              <a href="?category=women" class="hero__slider-link hero__slider-link_women">
+                <h2 class="hero__slider-title">
+                  Новые поступления блузок
+                </h2>
+              </a>
+            </li>
+            <li class="hero__slider-item">
+              <a href="?category=men" class="hero__slider-link hero__slider-link_men">
+                <h2 class="hero__slider-title">
+                  Мужские стильные рубашки
+                </h2>
+              </a>
+            </li>
+            <li class="hero__slider-item">
+              <a href="?category=kids" class="hero__slider-link hero__slider-link_kids">
+                <h2 class="hero__slider-title">
+                  Собираем ребенка в школу
+                </h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_1.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Джемпер</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">4000 ₽
+                  <span class="item__old-price">5000 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_2.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Футболка</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">3400 ₽
+                  <span class="item__old-price">5600 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_3.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Футболка</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">2300 ₽
+                  <span class="item__old-price">4200 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_4.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Худи</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">4700 ₽
+                  <span class="item__old-price">7500 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_5.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Свитер</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">1800 ₽
+                  <span class="item__old-price">3200 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_6.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Джемпер</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">5600 ₽
+                  <span class="item__old-price">7400 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_7.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Джинсы</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">4700 ₽
+                  <span class="item__old-price">6200 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_8.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Кожаная куртка</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">7000 ₽
+                  <span class="item__old-price">9000 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_9.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Куртка</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">3200 ₽
+                  <span class="item__old-price">4000 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_10.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Джемпер</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">5000 ₽
+                  <span class="item__old-price">6000 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_11.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Куртка</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">10000 ₽
+                  <span class="item__old-price">14000 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_12.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Куртка</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">7000 ₽
+                  <span class="item__old-price">9000 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_13.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Худи</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">4700 ₽
+                  <span class="item__old-price">7500 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_14.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Джемпер</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">4000 ₽
+                  <span class="item__old-price">5000 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_15.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Футболка</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">1800 ₽
+                  <span class="item__old-price">3200 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="item">
+              <img src="images/catalog_item_16.jpg" alt="" class="goods__image">
+              <button class="item__favorite-btn"></button>
+              <div class="item__control-wrapper">
+                <h3 class="item__title">Джемпер</h3>
+                <button class="item__to-cart">В корзину</button>
+                <p class="item__price">5600 ₽
+                  <span class="item__old-price">7400 ₽</span>
+                </p>
+                <button class="item__description-btn">Подробнее</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <ul class="footer__list-nav">
+        <li class="footer__nav-item">
+          <h3 class="footer__subtitle">Каталог</h3>
+          <ul class="footer__list-vertical">
+            <li class="footer__item">
+              <a href="?category=women" class="navigation__link">
+                Женщинам
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="?category=men" class="navigation__link">
+                Мужчинам
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="?category=kids" class="navigation__link">
+                Детям
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__nav-item">
+          <h3 class="footer__subtitle">Покупателям</h3>
+          <ul class="footer__list-vertical">
+            <li class="footer__item">
+              <a href="#" class="navigation__link">
+                Оплата заказа
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="navigation__link">
+                Условия доставки
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="navigation__link">
+                Обмен и возврат заказа
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="navigation__link">
+                Уход за изделиями
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__nav-item">
+          <h3 class="footer__subtitle">Связаться с нами</h3>
+          <ul class="footer__list-vertical">
+            <li class="footer__item">
+              <a href="#" class="navigation__link">
+                Контакты и адреса магазинов
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__nav-item">
+          <h3 class="footer__subtitle">Партнерам</h3>
+          <ul class="footer__list-vertical">
+            <li class="footer__item">
+              <a href="#" class="navigation__link">
+                Франшизы
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="footer__list-contacts">
+          <li class="footer__item">
+            <a href="" class="footer__link">8 800 495 84 49</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Second_Hand@gmail.com</a>
+          </li>
+      </ul>
+
+      <ul class="footer__list-contacts">
+        <li class="footer__item">
+          <a href="" class="footer__social-link footer__social-link_instagram"></a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__social-link footer__social-link_vk"></a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__social-link footer__social-link_facebook"></a>
+        </li>
+      </ul>
+      <a href="#">Соглашение об обработке персональных данных</a>
+    </div>
+  </footer>
+</body>
+</html>
