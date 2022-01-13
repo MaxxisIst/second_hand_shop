@@ -10,29 +10,35 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <a href="index.html" class="header__logo">
        <img src="images/logo/logo.svg" alt="Логотип компании Second Hand(зеленое дерево)" class="header__logo-img" width="112" height="42">
       </a>
 
       <nav class="navigation header__navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="?category=women" class="navigation__link">
-               Женщинам
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="?category=men" class="navigation__link">
-              Мужчинам
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="?category=kids" class="navigation__link">
-              Детям
-            </a>
-          </li>
-        </ul>
+        <button class="navigation__btn">
+          <span class="navigation__btn_line">Каталог</span>
+        </button>
+
+        <div class="navigation__mobile-wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="?category=women" class="navigation__link">Женщинам</a></li>
+            <li class="navigation__item"><a href="?category=men" class="navigation__link">Мужчинам</a></li>
+            <li class="navigation__item"><a href="?category=kids" class="navigation__link">Детям</a></li>
+          </ul>
+
+          <ul class="header__control-list navigation__control">
+            <li class="header__control-item">
+              <button class="header__btn header__btn_cart"></button>
+            </li>
+            <li class="header__control-item">
+              <a href="?" class="header__btn header__btn_favorite"></a>
+            </li>
+            <li class="header__control-item">
+              <a href="#" class="header__btn header__btn_person"></a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div class="header__search">
@@ -44,13 +50,13 @@
       </div>
 
       <ul class="header__control-list">
-        <li header__control-item>
+        <li class="header__control-item">
           <button class="header__btn header__btn_cart"></button>
         </li>
-        <li header__control-item>
+        <li class="header__control-item">
           <a href="?" class="header__btn header__btn_favorite"></a>
         </li>
-        <li header__control-item>
+        <li class="header__control-item">
           <a href="#" class="header__btn header__btn_person"></a>
         </li>
       </ul>
@@ -89,7 +95,7 @@
     </section>
 
     <section class="goods">
-      <div class="container">
+      <div class="container goods-container">
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -106,6 +112,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -122,6 +129,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -138,6 +146,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -154,6 +163,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -170,6 +180,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -186,6 +197,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -202,6 +214,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -218,6 +231,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -234,6 +248,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -250,6 +265,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -266,6 +282,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -282,6 +299,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -298,6 +316,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -314,6 +333,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -330,6 +350,7 @@
             </article>
           </li>
         </ul>
+
         <ul class="goods__list">
           <li class="goods__item">
             <article class="item">
@@ -356,20 +377,11 @@
         <li class="footer__nav-item">
           <h3 class="footer__subtitle">Каталог</h3>
           <ul class="footer__list-vertical">
-            <li class="footer__item">
-              <a href="?category=women" class="navigation__link">
-                Женщинам
-              </a>
+            <li class="footer__item"><a href="?category=women" class="footer__link">Женщинам</a>
             </li>
-            <li class="footer__item">
-              <a href="?category=men" class="navigation__link">
-                Мужчинам
-              </a>
+            <li class="footer__item"><a href="?category=men" class="footer__link">Мужчинам</a>
             </li>
-            <li class="footer__item">
-              <a href="?category=kids" class="navigation__link">
-                Детям
-              </a>
+            <li class="footer__item"><a href="?category=kids" class="footer__link">Детям</a>
             </li>
           </ul>
         </li>
@@ -377,25 +389,13 @@
         <li class="footer__nav-item">
           <h3 class="footer__subtitle">Покупателям</h3>
           <ul class="footer__list-vertical">
-            <li class="footer__item">
-              <a href="#" class="navigation__link">
-                Оплата заказа
-              </a>
+            <li class="footer__item"><a href="#" class="footer__link">Оплата заказа</a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="navigation__link">
-                Условия доставки
-              </a>
+            <li class="footer__item"><a href="#" class="footer__link">Условия доставки</a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="navigation__link">
-                Обмен и возврат заказа
-              </a>
+            <li class="footer__item"><a href="#" class="footer__link">Обмен и возврат заказа</a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="navigation__link">
-                Уход за изделиями
-              </a>
+            <li class="footer__item"><a href="#" class="footer__link">Уход за изделиями</a>
             </li>
           </ul>
         </li>
@@ -403,10 +403,7 @@
         <li class="footer__nav-item">
           <h3 class="footer__subtitle">Связаться с нами</h3>
           <ul class="footer__list-vertical">
-            <li class="footer__item">
-              <a href="#" class="navigation__link">
-                Контакты и адреса магазинов
-              </a>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты и адреса магазинов</a>
             </li>
           </ul>
         </li>
@@ -414,10 +411,7 @@
         <li class="footer__nav-item">
           <h3 class="footer__subtitle">Партнерам</h3>
           <ul class="footer__list-vertical">
-            <li class="footer__item">
-              <a href="#" class="navigation__link">
-                Франшизы
-              </a>
+            <li class="footer__item"><a href="#" class="footer__link">Франшизы</a>
             </li>
           </ul>
         </li>
@@ -443,6 +437,7 @@
           <a href="" class="footer__social-link footer__social-link_facebook"></a>
         </li>
       </ul>
+
       <a href="#">Соглашение об обработке персональных данных</a>
     </div>
   </footer>

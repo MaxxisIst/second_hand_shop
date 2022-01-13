@@ -1,0 +1,118 @@
+.navigation
+  &__list
+    display: flex
+    gap: 60px
+  &__item
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+  &__btn
+    display: none
+.header__control-list.navigation__control
+  display: none
+
+@media (max-width: 1000px)
+  .navigation
+    position: relative
+    padding: 0 10px
+    &__btn
+      display: flex
+      gap: 8px
+      align-items: center
+      background-color: transparent
+      border: none
+      font-weight: 300
+      font-size: 18px
+      line-height: 22px
+      color: $main-color
+      &:after
+        content: ''
+        display: block
+        width: 14px
+        height: 10px
+        background-image: url("../images/icons/nav_arrow.svg")
+        background-repeat: no-repeat
+        background-position: center
+    &__list
+      position: absolute
+      overflow: hidden
+      flex-direction: column
+      gap: 15px
+      background-color: $second-color
+      min-width: 100%
+      top: 34px
+      left: 0
+      height: 0
+      padding: 0 10px
+    &_active &__list
+      height: auto
+      padding-bottom: 13px
+    &__link
+      font-size: 14px
+      line-height: 17px
+    &_active &__btn::after
+      transform: rotate(180deg)
+
+@media (max-width: 760px)
+  .navigation
+    position: static
+    &__btn
+      font-size: 0
+      position: relative
+      width: 18px
+      height: 12px
+      &_line
+        position: absolute
+        left: 0
+        width: 100%
+        top: 50%
+        height: 2px
+        transform: translateY(-50%) scale(1)
+        background-color: $main-color
+        transition: transform .24s ease
+      &::after, &::before
+        content: ''
+        position: absolute
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: $main-color
+        transition: transform .24s ease, top .24s ease
+      &::after
+        top: calc(100% - 2px)
+      &::before
+        top: 0
+    &_active  &__btn
+      &::before
+        top: 50%
+        transform: rotate(45deg)
+      &::after
+        top: 50%
+        transform: rotate(-45deg)
+    &_active &__btn &__btn_line
+      transform: translateY(-50%) scale(0)
+    &__mobile-wrapper
+      position: absolute
+      display: none
+      top: 80px
+      left: 0
+      width: 100%
+      z-index: 10
+      background-color: $second-color
+      padding: 20px 94px
+    &__list
+      position: static
+      flex-direction: row
+      justify-content: space-between
+      margin-bottom: 30px
+      padding: 0
+    &_active &__mobile-wrapper
+      display: block
+  .header__control-list.navigation__control
+    display: flex
+    justify-content: flex-end
+
+@media (max-width: 580px)
+  .navigation
+    &__mobile-wrapper
+      padding: 10px 20px
