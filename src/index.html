@@ -7,6 +7,29 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.min.css">
   <title>Second Hand Shop</title>
+  <style>
+    .hero__slider-link_women {
+      background-image: url('images/swiper/banner_women.jpg');
+    }
+    .hero__slider-link_men {
+      background-image: url('images/swiper/banner_men.jpg');
+    }
+    .hero__slider-link_kids {
+      background-image: url('images/swiper/banner_kids.jpg');
+    }
+    @media (max-width: 1000px) {
+      .hero__slider-link_women {
+      background-image: url('images/swiper/banner_women_mob.jpg');
+    }
+    .hero__slider-link_men {
+      background-image: url('images/swiper/banner_men_mob.jpg');
+    }
+    .hero__slider-link_kids {
+      background-image: url('images/swiper/banner_kids_mob.jpg');
+    }
+    }
+  </style>
+  <script src="js//index.js" type="module"></script>
 </head>
 <body>
   <header class="header">
@@ -75,12 +98,14 @@
               </a>
             </li>
             <li class="hero__slider-item" hidden>
-              <a href="?category=men" class="hero__slider-link" style="background-image: url('images/swiper/banner_men.jpg')">
+              <a href="?category=men" class="hero__slider-link"
+              style="background-image: url('images/swiper/banner_men.jpg')">
                 <h2 class="hero__slider-title">Мужские стильные рубашк</h2>
               </a>
             </li>
             <li class="hero__slider-item" hidden>
-              <a href="?category=kids" class="hero__slider-link" style="background-image: url('images/swiper/banner_kids.jpg')">
+              <a href="?category=kids" class="hero__slider-link"
+              style="background-image: url('images/swiper/banner_kids.jpg')">
                 <h2 class="hero__slider-title">Собираем ребенка в&nbsp;школу</h2>
               </a>
             </li>
@@ -438,34 +463,26 @@
         <li class="footer__nav-item">
           <h3 class="footer__subtitle">Каталог</h3>
           <ul class="footer__list-vertical">
-            <li class="footer__item"><a href="?category=women" class="footer__link">Женщинам</a>
-            </li>
-            <li class="footer__item"><a href="?category=men" class="footer__link">Мужчинам</a>
-            </li>
-            <li class="footer__item"><a href="?category=kids" class="footer__link">Детям</a>
-            </li>
+            <li class="footer__item"><a href="?category=women" class="footer__link">Женщинам</a></li>
+            <li class="footer__item"><a href="?category=men" class="footer__link">Мужчинам</a></li>
+            <li class="footer__item"><a href="?category=kids" class="footer__link">Детям</a></li>
           </ul>
         </li>
 
         <li class="footer__nav-item">
           <h3 class="footer__subtitle">Покупателям</h3>
           <ul class="footer__list-vertical">
-            <li class="footer__item"><a href="#" class="footer__link">Оплата заказа</a>
-            </li>
-            <li class="footer__item"><a href="#" class="footer__link">Условия доставки</a>
-            </li>
-            <li class="footer__item"><a href="#" class="footer__link">Обмен и возврат заказа</a>
-            </li>
-            <li class="footer__item"><a href="#" class="footer__link">Уход за изделиями</a>
-            </li>
+            <li class="footer__item"><a href="#" class="footer__link">Оплата заказа</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Условия доставки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Обмен и возврат заказа</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Уход за изделиями</a></li>
           </ul>
         </li>
 
         <li class="footer__nav-item">
           <h3 class="footer__subtitle">Связаться с нами</h3>
           <ul class="footer__list-vertical">
-            <li class="footer__item"><a href="#" class="footer__link">Контакты и адреса магазинов</a>
-            </li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты и адреса магазинов</a></li>
           </ul>
         </li>
 
@@ -511,10 +528,10 @@
         </li>
       </ul>
 
-        <a title="agreement" href="#" class="footer__agreement footer__link">
-          <span class="footer__agreement-text">Соглашение об обработке</span>
-          <span class="footer__agreement-text">персональных данных</span>
-        </a>
+      <a title="agreement" href="#" class="footer__agreement">
+        <span class="footer__agreement-text">Соглашение об обработке</span>
+        <span class="footer__agreement-text">персональных данных</span>
+      </a>
     </div>
   </footer>
 
