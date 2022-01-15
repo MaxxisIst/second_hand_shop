@@ -1,0 +1,60 @@
+=hert-effects
+  &:hover
+    color: $fifth-color
+    opacity: .5
+    filter: drop-shadow(0px 0px 20px $fifth-color)
+  &:active
+    color: $fifth-color
+    opacity: 1
+  &:focus
+    color: $fifth-color
+    opacity: .75
+
+=item-to-cart-effects
+  &:hover
+    background-color: $seventh-color
+  &:active
+    background-color: $second-color
+    border: 1px solid $main-color
+    color: $main-color
+  &:focus
+    background-color: $third-color
+    border: 1px solid $main-color
+    color: $main-color
+
+=item-dscr-btn-effects
+  &:hover
+    color: $seventh-color
+  &:active
+    color: $main-color
+  &:focus
+    color: $eighth-color
+
+=item-dscr-btn-pseudo-effects
+  &:hover::after
+    background-color: $seventh-color
+  &:active::after
+    display: none
+  &::after:focus
+    background-color: $seventh-color
+
+=link-effects
+  &:hover
+    color: $fourth-color
+    opacity: .5
+    filter: drop-shadow(0px 0px 20px $fourth-color)
+  &:active
+    opacity: 1
+  &:focus
+    opacity: .75
+
+=agree-efects
+  &:hover::after
+    background-color: $fourth-color
+    opacity: .5
+  &:active::after
+    background-color: $fourth-color
+    opacity: 1
+  &:focus::after
+    background-color: $fourth-color
+    opacity: .75

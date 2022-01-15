@@ -1,0 +1,85 @@
+.item
+  position: relative
+  &__img
+    width: 280px
+    height: 330px
+    object-fit: cover
+    object-position: top
+    margin-bottom: 11px
+  &__favorite-btn
+    position: absolute
+    top: 20px
+    right: 20px
+    border: none
+    background-color: transparent
+    color: $second-color
+    filter: drop-shadow(4px 7px 20px transparent)
+    transition: color .4s ease, opacity .4s ease, drop-shadow .4s ease
+    +hert-effects
+  &__control-wrapper
+    display: grid
+    grid-template-columns: 1fr 115px
+    gap: 9px
+  &__title
+    display: flex
+    align-items: center
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: $sixth_color
+  &__to-cart
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    color: $second-color
+    background-color: $main-color
+    border: none
+    padding: 8px
+    transition: color .4s ease, background-color .4s ease
+    +item-to-cart-effects
+  &__price
+    display: flex
+    align-items: center
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: $sixth_color
+    &-old
+      position: relative
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      margin-left: 8px
+      &::after
+        content: ''
+        position: absolute
+        display: block
+        height: 1px
+        width: 100%
+        left: 0
+        top: 50%
+        background-color: $fifth_color
+        transform: rotate(-4.34deg)
+  &__description-btn
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    color: $main-color
+    background-color: transparent
+    border: none
+    padding: 8px
+    transition: color .4s ease, background-color .4s ease
+    +item-dscr-btn-effects
+  &__description-text
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      height: 1px
+      width: 100%
+      left: 0
+      bottom: 1px
+      background-color: $main-color
+      transition: color .4s ease, background-color .4s ease
+    +item-dscr-btn-pseudo-effects

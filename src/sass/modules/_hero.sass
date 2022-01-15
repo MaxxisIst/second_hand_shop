@@ -1,0 +1,51 @@
+.hero
+  padding: 60px 0 40px
+  &__slider-link
+    display: flex
+    align-items: flex-end
+    width: 100%
+    min-height: 500px
+    padding: 70px 80px
+    background-color: $main-color
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+  &__slider-title
+    max-width: min-content
+    font-weight: 400
+    font-size: 60px
+    line-height: 1.2
+    text-transform: uppercase
+    color: $second-color
+
+@media (max-width: 1200px)
+  .hero
+    padding: 50px 0 35px
+    &__container
+      padding: 0
+    &__slider-link
+      padding: 80px 90px
+    &__slider-title
+      font-size: 56px
+@media (max-width: 1000px)
+  .hero
+    &__slider-link
+      padding: 81px 94px
+      min-height: 530px
+    &__slider-title
+      font-size: 44px
+@media (max-width: 760px)
+  .hero
+    &__slider-link
+      padding: 81px 94px
+      min-height: 530px
+    &__slider-title
+      font-size: 38px
+@media (max-width: 580px)
+  .hero
+    padding: 30px 0 20px
+    &__slider-link
+      min-height: 400px
+      padding: 60px 20px
+    &__slider-title
+      font-size: 30px

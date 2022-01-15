@@ -1,0 +1,109 @@
+.footer
+  background-color: $main-color
+  color: $second-color
+  padding: 60px 100px
+  text-align: center
+  &__list-nav
+    display: grid
+    grid-template-columns: repeat(4, minmax(max-content, 1fr))
+    gap: 40px
+    margin-bottom: 100px
+    justify-content: space-between
+  &__subtitle
+    font-weight: normal
+    font-size: 20px
+    line-height: 1.3
+    text-transform: uppercase
+    color: $second-color
+    margin-bottom: 27px
+  &__list-vertical
+    display: flex
+    flex-direction: column
+    gap: 18px
+    font-weight: 300
+    font-size: 16px
+    line-height: 20px
+    color: $second-color
+  &__list
+    &-contacts, &-social
+      display: flex
+      gap: 40px
+      justify-content: center
+      margin-bottom: 70px
+  &__social-link, &__link
+    background-color: transparent
+    filter: drop-shadow(4px 7px 20px transparent)
+    transition: color .4s ease, opacity .4s ease, drop-shadow .4s ease
+    +link-effects
+  &__agreement
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      height: 1px
+      width: 100%
+      left: 0
+      bottom: 1px
+      background-color: $second-color
+      transition: background-color .4s ease, opacity .4s ease
+    +agree-efects
+
+@media (max-width: 1200px)
+  .footer
+    padding-bottom: 72px
+
+@media (max-width: 1000px)
+  .footer
+    padding: 36px 0 58px
+    &__subtitle
+      font-size: 18px
+    &__list-nav
+      grid-template-columns: repeat(2, minmax(max-content, 1fr))
+      gap: 50px
+      margin-bottom: 50px
+    &__agreement
+      &-text
+        display: block
+        margin: 0 auto
+        position: relative
+        max-width: max-content
+        transition: color .4s ease, opacity .4s ease
+        &::after
+          content: ''
+          position: absolute
+          display: block
+          height: 1px
+          width: 100%
+          left: 0
+          bottom: 1px
+          background-color: $second-color
+          transition: background-color .4s ease, opacity .4s ease
+        +link-effects
+        +agree-efects
+
+@media (max-width: 760px)
+  .footer
+    padding: 30px 0 40px
+    &__list
+      &-nav
+        grid-template-columns: repeat(1, minmax(max-content, 1fr))
+        gap: 10px
+        margin-bottom: 40px
+      &-contacts
+        flex-direction: column
+    &__nav-item
+      margin-bottom: 30px
+
+@media (max-width: 580px)
+  .footer
+    text-align: start
+    &__list
+      &-social
+        justify-content: start
+        svg
+          width: 38px
+          height: 38px
+    &__agreement
+      &-text
+        margin: 0
