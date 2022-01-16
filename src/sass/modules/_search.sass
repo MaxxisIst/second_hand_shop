@@ -22,13 +22,13 @@
     position: absolute
     right: 70px
     top: 0
-    width: 500px
+    width: 450px
     height: 100%
     border: none
     border-radius: 20px 0 0 20px
     background-color: $third-color
     transform: scaleX(0)
-    transition: transform 0.4s ease-in-out 0.2
+    transition: transform .4s ease
     transform-origin: right
     font-weight: 500
     font-size: 14px
@@ -53,11 +53,15 @@
     background-image: url(../images/icons/search_close.svg)
     visibility: hidden
     opacity: 0
-    transition: opacity 0.4s ease-in-out
+    transition: opacity 0.4s ease
     z-index: 3
   &_active &__close
     visibility: visible
     opacity: 0.4
+@media (max-width: 1000px)
+  .search
+    &__input
+      width: 330px
 @media (max-width: 760px)
   .search
     &__button
@@ -69,3 +73,5 @@
       transform: scaleX(1)
       font-size: 12px
       line-height: 15px
+    &_active &__button
+      border-radius: 0 12px 12px 0
