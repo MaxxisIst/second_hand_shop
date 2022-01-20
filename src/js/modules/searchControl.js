@@ -15,18 +15,15 @@ const searchControl = ({ selectorBtn, selectorForm, selectorClose, classActive, 
     btn.type = 'button';
   };
 
-  if (document.documentElement.clientWidth <= breakpoint) {
-    btn.type = 'submit';
-  };
-
   if (document.documentElement.clientWidth > breakpoint) {
     btn.addEventListener('click', activateForm);
     close.addEventListener('click', deactivateForm);
-  };
+  } else {
+    btn.type = 'submit';
+  }
 
-  btn.addEventListener('click', activateForm);
-  close.addEventListener('click', deactivateForm);
-
+  // btn.addEventListener('click', activateForm);
+  // close.addEventListener('click', deactivateForm);
 };
 
 export default searchControl;

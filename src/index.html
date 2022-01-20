@@ -9,28 +9,34 @@
   <link rel="stylesheet" href="css/index.min.css">
   <title>Second Hand Shop</title>
   <style>
+    /* нужно через прелоадер!! */
+    body {
+      opacity: 0;
+      transition: opacity .4s ease;
+    };
     .hero__slider-link_women {
       background-image: url('images/swiper/banner_women.jpg');
-    }
+    };
     .hero__slider-link_men {
       background-image: url('images/swiper/banner_men.jpg');
-    }
+    };
     .hero__slider-link_kids {
       background-image: url('images/swiper/banner_kids.jpg');
-    }
+    };
     @media (max-width: 1000px) {
       .hero__slider-link_women {
       background-image: url('images/swiper/banner_women_mob.jpg');
-    }
+    };
     .hero__slider-link_men {
       background-image: url('images/swiper/banner_men_mob.jpg');
-    }
+    };
     .hero__slider-link_kids {
       background-image: url('images/swiper/banner_kids_mob.jpg');
-    }
+    };
     }
   </style>
   <script src="js//index.js" type="module"></script>
+  <script src="snow/snow.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -101,7 +107,7 @@
             <li class="hero__slider-item swiper-slide">
               <a href="?category=men" class="hero__slider-link hero__slider-link_men"
               style="background-image: url('images/swiper/banner_men.jpg')">
-                <h2 class="hero__slider-title">Мужские стильные рубашк</h2>
+                <h2 class="hero__slider-title">Мужские стильные рубашки</h2>
               </a>
             </li>
             <li class="hero__slider-item swiper-slide">
@@ -120,7 +126,7 @@
     <section class="goods">
       <div class="container goods-container">
         <ul class="goods__list">
-          <li class="goods__item">
+          <!-- <li class="goods__item">
             <article class="item">
               <img src="images/catalog_item_1.jpg" alt="Джемпер" class="item__img">
               <button class="item__favorite-btn">
@@ -454,7 +460,7 @@
                 </button>
               </div>
             </article>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
@@ -537,6 +543,103 @@
       </a>
     </div>
   </footer>
+
+  <div class="overlay overlay_item">
+    <div class="overlay__modal">
+      <button class="overlay__button-close" type="button"></button>
+      <div class="modal-item">
+        <img src="images/catalog_item_1.jpg" alt="Джемпер" class="modal-item__img">
+
+        <div class="modal-item__description">
+          <h2 class="modal-item__title">Джемпер</h2>
+          <ul class="modal-item__advantage-list">
+            <li class="modal-item__advantage-item">Состав:
+              <span class="modal-item__text">Хлопок - 47%, Акрил - 26%, Шерсть - 14%, Полиамид - 13%</span>
+            </li>
+
+            <li class="modal-item__advantage-item">Материал подкладки:
+              <span class="modal-item__text">без подкладки</span>
+            </li>
+
+            <li class="modal-item__advantage-item">Утеплитель:
+              <span class="modal-item__text">без утеплителя</span>
+            </li>
+
+            <li class="modal-item__advantage-item">Сезон:
+              <span class="modal-item__text">мульти</span>
+            </li>
+
+            <li class="modal-item__advantage-item">Цвет:
+              <span class="modal-item__text">бежевый</span>
+            </li>
+          </ul>
+
+          <p class="modal-item__article">Артикул:
+            <span class="modal-item__text">IX001XW016CK</span>
+          </p>
+
+          <div class="modal-item__btn-group">
+            <button class="modal-item__btn-to-cart" type="button">В корзину</button>
+            <button class="modal-item__btn-to-favorite" type="button">
+              <svg width="44" height="37" viewBox="0 0 44 37" xmlns="http://www.w3.org/2000/svg">
+                <path d="m21.566 6.752.434.754.433-.754c.705-1.227 1.895-2.9 3.67-4.207l-.297-.403.297.403C27.947 1.186 30.032.5 32.313.5 38.684.5 43.5 5.452 43.5 12.075c0 3.557-1.492 6.576-4.198 9.687-2.718 3.124-6.618 6.292-11.374 10.153l.315.388-.315-.388a536.348 536.348 0 0 0-5.343 4.377.914.914 0 0 1-.585.208.914.914 0 0 1-.585-.208c-1.9-1.583-3.728-3.066-5.339-4.374l-.003-.002c-4.756-3.861-8.657-7.03-11.375-10.154C1.992 18.652.5 15.632.5 12.075.5 5.452 5.316.5 11.688.5c2.28 0 4.365.686 6.209 2.045l.297-.403-.297.403c1.775 1.307 2.965 2.98 3.67 4.207Z" fill="currentColor" stroke="#4D4D4D"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay overlay_cart">
+    <div class="overlay__modal">
+      <button class="overlay__button-close" type="button"></button>
+      <form class="modal-cart">
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <img src="images/catalog_item_1.jpg" alt="Джемпер" class="modal-cart__img">
+            <div class="modal-cart__wrapper">
+              <h3 class="modal-cart__subtitle">Джемпер</h3>
+              <ul class="modal-cart__props props">
+                <li class="props__item">
+                  <h4 class="props__title">Артикул:</h4>
+                  <p class="props__description">IX001XW016CK</p>
+                </li>
+
+                <li class="props__item">
+                  <h4 class="props__title">Количество</h4>
+                  <div class="props__description">
+                    <button class="props__btn props__btn_minus" type="button">-</button>
+                    <output class="props__count" name="count">2</output>
+                    <button class="props__btn props__btn_plus" type="button">+</button>
+                  </div>
+                </li>
+
+                <li class="props__item">
+                  <h4 class="props__title">Цена, шт</h4>
+                  <p class="props__description">4500 ₽</p>
+                </li>
+
+                <li class="props__item">
+                  <h4 class="props__title">Стоимость</h4>
+                  <p class="props__description">9000 ₽</p>
+                </li>
+              </ul>
+
+              <div class="modal-cart__footer">
+                <p class="modal-cart__total">Итог:
+                  <output class="modal-cart__tota-price" name="tota-price">9000</output>
+                  <span> ₽</span>
+                </p>
+
+                <button class="modal-cart__submit" type="submit"></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
 
   <svg class="hidden">
     <symbol id="heart" viewBox="0 0 28 24">

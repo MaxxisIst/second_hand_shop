@@ -15,7 +15,7 @@
     background-color: $third-color
     border-radius: 20px
     will-change: border-radius
-    transition: border-radius 0.2s ease-in-out
+    transition: border-radius 0.2s ease 0.4s
     border: none
     z-index: 2
   &__input
@@ -38,8 +38,10 @@
   &_active &__input
     transform: scaleX(1)
     padding: 14px 30px
+    transition: transform 0.4s ease 0.5s
   &_active &__button
     border-radius: 0 20px 20px 0
+    transition: border-radius 0.4s ease, background-color .24ms ease
   &__close
     position: absolute
     top: 6px

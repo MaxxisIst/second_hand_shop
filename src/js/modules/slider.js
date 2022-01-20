@@ -1,12 +1,14 @@
 import Swiper from './swiper-bundle.esm.browser.min.js';
 
-const slider = ({ selectorSlider, selectorPagination: el, bulletClass, bulletActiveCLass }) => {
-  new Swiper(selectorSlider, {
+const slider = ({selectorSlider, selectorPagination: el, bulletClass, bulletActiveCLass, selectorParentSlider }) => {
+
+  const swiper = new Swiper(selectorSlider, {
+    init: false,
     autoplay: true,
     loop: true,
     effect: 'coverflow',
     coverflowEffect: {
-      rotate: 30,
+      rotate: 45,
     },
     pagination: {
       el,
@@ -26,6 +28,22 @@ const slider = ({ selectorSlider, selectorPagination: el, bulletClass, bulletAct
       }
     }
   });
+
+  const checkSlider = () => {
+
+    const href = location.href;
+    if (href.includes('?')) {
+      swiper.disable();
+      document.querySelector(selectorParentSlider)?.remove();
+    } else {
+      swiper.init();
+    }
+
+  };
+
+  checkSlider();
+
+  return checkSlider;
 };
 
 export default slider;
