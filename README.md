@@ -1,6 +1,7 @@
 # second_hand_shop
 # page
-https://secure-ocean-68157.herokuapp.com/
 https://maxxisist.github.io/second_hand_shop/src
+# heroku
+https://lit-citadel-78484.herokuapp.com/
 # repository
 https://github.com/MaxxisIst/second_hand_shop.git
