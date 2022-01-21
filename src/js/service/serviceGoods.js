@@ -1,4 +1,6 @@
-const URL_SERVER = 'http://localhost:3000';
+// const URL_SERVER = 'http://localhost:3000';
+const URL_SERVER = 'https://lit-citadel-78484.herokuapp.com';
+
 const URL_POSTFIX = '/api/goods';
 
 const getGoods = (query = '') =>
