@@ -12,11 +12,12 @@ const renderList = (cart) => {
 
   cart.map(({id, title, price, discountPrice, image}) => {
     const li = document.createElement('li');
-    li.classList.add('.modal-cart__item');
+    li.classList.add('modal-cart__item');
 
     const truePrice = discountPrice || price;
 
     const obj = data.find(item => item.id === id);
+
     li.insertAdjacentHTML('beforeend', `
       <img src="${image}"
       alt="${title}" class="modal-cart__img" width="100" height="105">
@@ -52,7 +53,7 @@ const renderList = (cart) => {
 
     cartList.append(li);
     totalPrice += truePrice * obj.count;
-  })
+  });
 
   cartTotal.textContent = totalPrice;
 }
@@ -63,7 +64,7 @@ const renderCart = () => {
   if (list.length) {
     serviceGoods(renderList, `?list=${list}`)
   } else {
-    renderList
+    renderList([]);
   }
 };
 

@@ -85,7 +85,7 @@ addFavorite({
 
 controlCart({
   selectorAdd: '.item__to-cart',
-  selectorParent: '.goods-list',
+  selectorParent: '.goods__list',
   text: '{count} в корзине',
 });
 
@@ -100,7 +100,7 @@ controlCart({
 
 controlCart({
   selectorAdd: '.props__btn_plus',
-  selectParent: '.modal-cart__list',
+  selectorParent: '.modal-cart__list',
   selectorRemove: '.props__btn_minus',
   selectorText: {
       selector: '.item__to-cart',
