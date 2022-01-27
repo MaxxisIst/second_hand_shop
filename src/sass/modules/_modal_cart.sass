@@ -1,0 +1,84 @@
+.overlay
+  &__modal_cart
+    position: relative
+    margin: auto
+    background-color: $second-color
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15)
+    border-radius: 20px
+    padding: 60px 100px 60px 100px
+
+.modal-cart
+  &__img
+    width: 100px
+    height: 105px
+    object-fit: cover
+  &__subtitle
+    font-weight: 500
+    font-size: 22px
+    line-height: 130%
+  &__list
+    overflow-y: auto
+    max-height: 350px
+    margin-bottom: 30px
+  &__item
+    display: flex
+    gap: 12px
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
+  &__footer
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &__total
+    font-weight: 300
+    font-size: 22px
+    line-height: 130%
+    color: $main-color
+    margin-bottom: 20px
+    >span
+      font-weight: 500
+  &__tota-price
+    font-weight: 500
+  &__submit
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    color: $second-color
+    background-color: $main-color
+    border: none
+    padding: 7px 25px 7px 25px
+    +item-to-cart-effects
+
+.props
+  display: flex
+  gap: 30px
+  justify-content: space-between
+  &__title
+    font-weight: 300
+    font-size: 16px
+    line-height: 20px
+    color: $sixth_color
+    text-align: center
+    margin-bottom: 6px
+  &__description
+    display: flex
+    justify-content: center
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    color: $sixth_color
+    align-items: center
+    gap: 7px
+  &__btn
+    width: 14px
+    height: 14px
+    color: $sixth_color
+    background-color: $second-color
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15)
+    border: none
+    border-radius: 50%
+    font-weight: 400
+    font-size: 16px
+    line-height: 0
+  &__count

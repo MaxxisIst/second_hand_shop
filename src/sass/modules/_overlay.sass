@@ -1,0 +1,28 @@
+.overlay
+  display: none
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  overflow: auto
+  z-index: 98
+  &_active
+    display: flex
+  &__button-close
+    position: absolute
+    top: 10px
+    right: 10px
+    display: block
+    width: 24px
+    height: 24px
+    color: $main-color
+    background-color: transparent
+    background-position: center
+    background-repeat: no-repeat
+    background-image: url("../images/icons/close.svg")
+    border: none
+    background-size: 24px
+    opacity: .4
+  // &_cart
+  //   display: flex

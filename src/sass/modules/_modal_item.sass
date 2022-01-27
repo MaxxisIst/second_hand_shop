@@ -1,0 +1,93 @@
+.overlay
+  &__modal_item
+    position: relative
+    margin: auto
+    background-color: $second-color
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15)
+    border-radius: 20px
+    padding: 80px 200px 80px 100px
+
+.modal-item
+  display: flex
+  gap: 120px
+  &__img
+    width: 380px
+    height: 440px
+    object-fit: cover
+  &__title
+    font-size: 34px
+    line-height: 130%
+    text-transform: uppercase
+    margin-bottom: 30px
+  &__advantage-list
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+    color: $sixth_color
+    margin-bottom: 20px
+  &__text
+    font-weight: 500
+  &__article
+    margin-bottom: 30px
+  &__btn-group
+    display: flex
+    align-items: center
+    gap: 30px
+  &__btn-to-cart
+    font-size: 18px
+    line-height: 22px
+    padding: 7px 25px
+  &__btn-to-favorite
+    background-color: transparent
+    color: $eighth-color
+    opacity: .4
+    border: none
+    +hert-effects
+    &.active
+      color: $fifth-color
+      opacity: 1
+  &__description
+    max-width: 360px
+
+@media (max-width: 1400px)
+  .overlay
+    &__modal_item
+      padding: 80px 75px 80px 70px
+  .modal
+    &-item
+      gap: 40px
+      &__img
+        width: 320px
+        height: 370px
+      &__title
+        font-size: 30px
+
+@media (max-width: 1000px)
+  .overlay
+    &__modal_item
+      padding: 40px 20px 35px 20px
+  .modal
+    &-item
+      gap: 10px
+      &__img
+        width: 220px
+        height: 320px
+      &__title
+        font-size: 22px
+      &__advantage-item
+        font-size: 16px
+
+@media (max-width: 580px)
+  .modal
+    &-item
+      flex-direction: column
+      gap: 10px
+      &__img
+        width: 240px
+        height: 230px
+      &__title
+        font-size: 18px
+      &__advantage-item
+        font-size: 14px
+      &__description
+        max-width: 240px

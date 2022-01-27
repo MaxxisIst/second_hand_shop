@@ -13,9 +13,10 @@
     border: none
     background-color: transparent
     color: $second-color
-    filter: drop-shadow(4px 7px 20px transparent)
-    transition: color .4s ease, opacity .4s ease, drop-shadow .4s ease
     +hert-effects
+    &.active
+      color: $fifth-color
+      opacity: 1
   &__control-wrapper
     display: grid
     grid-template-columns: 1fr 115px
@@ -28,15 +29,9 @@
     line-height: 22px
     color: $sixth_color
   &__to-cart
-    font-weight: 500
     font-size: 14px
     line-height: 17px
-    color: $second-color
-    background-color: $main-color
-    border: none
     padding: 8px
-    transition: color .4s ease, background-color .4s ease
-    +item-to-cart-effects
   &__price
     display: flex
     align-items: center
