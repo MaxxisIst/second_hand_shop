@@ -82,3 +82,46 @@
     font-size: 16px
     line-height: 0
   &__count
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+
+@media (max-width: 1400px)
+  .overlay
+    &__modal_cart
+      padding: 60px 50px 60px 50px
+
+@media (max-width: 760px)
+  .overlay
+    &__modal_cart
+      padding: 40px 45px 40px 30px
+  .modal-cart
+    &__subtitle
+      font-size: 20px
+  .props
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 15px 30px
+    &__title
+      margin: 0
+@media (max-width: 580px)
+  .overlay
+    &__modal_cart
+      padding: 35px 20px 30px 20px
+  .modal-cart
+    &__subtitle
+      font-size: 16px
+    &__img
+      width: 100px
+      height: 145px
+  .props
+    display: flex
+    flex-direction: column
+    &__description
+      justify-content: flex-start
+      font-size: 12px
+    &__title
+      text-align: left
+      font-size: 12px
+    &__count
+      font-size: 14px

@@ -44,12 +44,12 @@ const removeCart = (elem, selectorText) => {
   } else {
     const newCart = cart.filter(item => item.id !== elem.dataset.id);
     setStorage('cart', newCart);
-  }
 
-  if (selectorText) {
-    document.querySelectorAll(`${selectorText.selector}[data-id="${findItem.id}"]`).forEach(elem => {
-    elem.textContent = 'В корзину';
-    })
+    if (selectorText) {
+      document.querySelectorAll(`${selectorText.selector}[data-id="${findItem.id}"]`).forEach(elem => {
+      elem.textContent = 'В корзину';
+      })
+    }
   }
 };
 

@@ -21,7 +21,7 @@ const renderModal = (data) => {
 
   for (const key in data.description) {
     htmlAdvantage += `
-      <li class="modal-item__advantage-item">${key}:
+      <li class="modal-item__advantage-item">${key}
         <span class="modal-item__text">${data.description[key]}</span>
       </li>
     `;
@@ -72,7 +72,6 @@ const controlModal = ({
         modal.classList.add(classActive);
       })
     })
-
   }
 
   modal.addEventListener('click', e => {

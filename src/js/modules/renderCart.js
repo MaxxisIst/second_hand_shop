@@ -10,7 +10,7 @@ const renderList = (cart) => {
 
   let totalPrice = 0;
 
-  cart.map(({id, title, price, discountPrice, image}) => {
+  cart.map(({ id, title, price, discountPrice, image }) => {
     const li = document.createElement('li');
     li.classList.add('modal-cart__item');
 
@@ -20,7 +20,7 @@ const renderList = (cart) => {
 
     li.insertAdjacentHTML('beforeend', `
       <img src="${image}"
-      alt="${title}" class="modal-cart__img" width="100" height="105">
+        alt="${title}" class="modal-cart__img" width="100" height="105">
       <div class="modal-cart__wrapper">
         <h3 class="modal-cart__subtitle">${title}</h3>
         <ul class="modal-cart__props props">
@@ -37,12 +37,10 @@ const renderList = (cart) => {
               <button class="props__btn props__btn_plus" type="button" data-id="${id}">+</button>
             </div>
           </li>
-
           <li class="props__item">
             <h4 class="props__title">Цена, шт</h4>
             <p class="props__description">${truePrice} ₽</p>
           </li>
-
           <li class="props__item">
             <h4 class="props__title">Стоимость</h4>
             <p class="props__description">${truePrice * obj.count} ₽</p>
@@ -53,7 +51,8 @@ const renderList = (cart) => {
 
     cartList.append(li);
     totalPrice += truePrice * obj.count;
-  });
+
+  })
 
   cartTotal.textContent = totalPrice;
 }
