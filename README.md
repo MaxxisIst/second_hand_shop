@@ -2,7 +2,7 @@
 
 # page
 
-https://maxxisist.github.io/second_hand_shop/src
+https://maxxisist.github.io/second_hand_shop/dist
 
 # heroku-server-node-back
 
